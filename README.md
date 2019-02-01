@@ -10,7 +10,7 @@ This Module sends Payload received on a MQTT Topic to a defined MM Notification
 Here is an example configuration with description. Put it in the `MagicMirror/config/config.js` file:
 
     {
-        module: 'MMM-MQTT',
+        module: 'MMM-MQTT-Notification',
         position: 'bottom_left',
         config: {
             mqttServers: [

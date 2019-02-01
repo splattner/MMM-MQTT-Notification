@@ -1,5 +1,5 @@
 
-Module.register("MMM-MQTT", {
+Module.register("MMM-MQTT-Notification", {
 
     // Default module config
     defaults: {
