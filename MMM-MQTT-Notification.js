@@ -43,7 +43,6 @@ Module.register("MMM-MQTT-Notification", {
             if (payload != null) {
                 for (i = 0; i < this.subscriptions.length; i++) {
                     sub = this.subscriptions[i];
-                    console.log(sub);
                     if (sub.serverKey == payload.serverKey && sub.topic == payload.topic) {
                         this.sendNotification(sub.notificationKey, payload.value);
                     }
