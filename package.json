@@ -1,0 +1,9 @@
+{
+  "name": "MMM-MQTT-Notification",
+  "version": "0.0.1",
+  "description": "Translate MQTT into Notifications",
+  "author": "Sebastian Platttner",
+  "dependencies": {
+    "mqtt": "^2.18.0"
+  }
+}
