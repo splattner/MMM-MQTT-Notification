@@ -39,15 +39,12 @@ Module.register("MMM-MQTT-Notification", {
     },
 
     socketNotificationReceived: function (notification, payload) {
-        console.log(this.name + ': Socket notification received: ', notification, ': ', payload);
         if (notification === 'MQTT_PAYLOAD') {
-          console.log("MQTT Payload: ", payload)
             if (payload != null) {
                 for (i = 0; i < this.subscriptions.length; i++) {
                     sub = this.subscriptions[i];
                     console.log(sub);
                     if (sub.serverKey == payload.serverKey && sub.topic == payload.topic) {
-                        console.log(this.name + ': Send Notification: ', sub.notificationKey, ': ', payload.value);
                         this.sendNotification(sub.notificationKey, payload.value);
                     }
                 }
