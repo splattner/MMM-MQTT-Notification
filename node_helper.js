@@ -76,6 +76,7 @@ module.exports = NodeHelper.create({
         });
 
         server.client.on('message', function (topic, payload) {
+            console.log(self.name + ' MQTT Message received on Topic: ' + topic ' Payload: ' + payload)
             self.sendSocketNotification('MQTT_PAYLOAD', {
                 serverKey: server.serverKey,
                 topic: topic,

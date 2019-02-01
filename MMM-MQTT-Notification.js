@@ -39,6 +39,7 @@ Module.register("MMM-MQTT-Notification", {
 
     socketNotificationReceived: function (notification, payload) {
         if (notification === 'MQTT_PAYLOAD') {
+          console.log("MQTT Payload:" + payload)
             if (payload != null) {
                 for (i = 0; i < this.subscriptions.length; i++) {
                     sub = this.subscriptions[i];
