@@ -11,7 +11,6 @@ Here is an example configuration with description. Put it in the `MagicMirror/co
 
     {
         module: 'MMM-MQTT-Notification',
-        position: 'bottom_left',
         config: {
             mqttServers: [
                 {
