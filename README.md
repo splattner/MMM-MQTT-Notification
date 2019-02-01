@@ -12,7 +12,6 @@ Here is an example configuration with description. Put it in the `MagicMirror/co
     {
         module: 'MMM-MQTT',
         position: 'bottom_left',
-        header: 'MQTT',
         config: {
             mqttServers: [
                 {
