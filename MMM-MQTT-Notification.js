@@ -25,6 +25,7 @@ Module.register("MMM-MQTT-Notification", {
                 this.subscriptions.push({
                     serverKey: serverKey,
                     notificationKey: sub.notificationKey
+                    topic: sub.topic
                 });
             }
         }
